@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="অর্বিট বাজার - Orbit Bazaar. আপনার অনলাইন কেনাকাটার সেরা গন্তব্য। আমরা দিচ্ছি ১০০% নিরাপদ ও ঝামেলামুক্ত কেনাকাটার নিশ্চয়তা।" />
+    <meta name="keywords" content="Orbit Bazaar, অবির্ট বজার, অর্বিট বাজার, online shopping bangladesh, ecommerce, buy online, smart watch, earbuds" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Orbit Bazaar | অর্বিট বাজার</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((error) => {
+            console.log('SW Registration Failed: ', error);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+
